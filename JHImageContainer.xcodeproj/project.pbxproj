@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17EA01EA460B838AC07B2039 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EA065A8DB4718D3009D735 /* main.m */; };
+		17EA04039F2775C9157D25AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EA01DB5AA0018CA27EB6E5 /* LaunchScreen.storyboard */; };
+		17EA04EE87DF1EB95819A515 /* JHImageContainerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EA0184E2477572C9D31B0F /* JHImageContainerTests.m */; };
+		17EA0507F985F355F2DF6E03 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EA0E5F723C59CBC0D36887 /* AppDelegate.m */; };
+		17EA057B93C92E3FD68BA974 /* JHImageContainerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EA061D255E91B2D689C769 /* JHImageContainerUITests.m */; };
+		17EA05CCE7CD96484046D5AB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17EA0DFB787A7468BECA4EED /* Info.plist */; };
+		17EA084F3DB67192329F2A0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17EA047BBD2C98DCDACC8C7E /* Assets.xcassets */; };
+		17EA0945C16ADDF8AFC87C25 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17EA03F36F125317804692E4 /* Info.plist */; };
+		17EA0A9A0D9AE15014B7F04C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17EA039D35B7D69B2E5BA4F5 /* Info.plist */; };
+		17EA0F002D1C3C30AFDCF7FD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EA0E5220EFC837DC0C2411 /* ViewController.m */; };
+		17EA0F8BF748AB88731CE3CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EA0A2FA609FF47348740DA /* Main.storyboard */; };
+		2E62403E1CF36A6500AB9060 /* JHImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E62403D1CF36A6500AB9060 /* JHImageView.m */; };
+		58FA90465B9638967E75420A /* libPods-JHImageContainer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8037C466C6B5D7CC2FBCB607 /* libPods-JHImageContainer.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17EA00C2D261BA742ABA6EE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17EA01CAE7961884F44CF914 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17EA0F0C4450CD00E2C1C8E8;
+			remoteInfo = JHImageContainer;
+		};
+		17EA0D60BCE231369AF19957 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17EA01CAE7961884F44CF914 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17EA0F0C4450CD00E2C1C8E8;
+			remoteInfo = JHImageContainer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17EA0184E2477572C9D31B0F /* JHImageContainerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHImageContainerTests.m; sourceTree = "<group>"; };
+		17EA01C3EA971F409082DF36 /* JHImageContainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JHImageContainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17EA039D35B7D69B2E5BA4F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		17EA03F36F125317804692E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		17EA047BBD2C98DCDACC8C7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17EA061D255E91B2D689C769 /* JHImageContainerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHImageContainerUITests.m; sourceTree = "<group>"; };
+		17EA063D29C16A634F20ADEE /* JHImageContainerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JHImageContainerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17EA065A8DB4718D3009D735 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		17EA0C55530F66D91093838E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		17EA0C91D704B3B0DAAA15DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		17EA0CAD4353B0A4065B3CDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		17EA0DDEA5888B598425C841 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		17EA0DFB787A7468BECA4EED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		17EA0E32ADD490D5AEAE8801 /* JHImageContainerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JHImageContainerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17EA0E5220EFC837DC0C2411 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		17EA0E5F723C59CBC0D36887 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2E62403C1CF36A6500AB9060 /* JHImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JHImageView.h; path = JHImageContainer/JHImageView/JHImageView.h; sourceTree = "<group>"; };
+		2E62403D1CF36A6500AB9060 /* JHImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JHImageView.m; path = JHImageContainer/JHImageView/JHImageView.m; sourceTree = "<group>"; };
+		33E9EEC9BA7DC66D7C98402B /* Pods-JHImageContainer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHImageContainer.release.xcconfig"; path = "Pods/Target Support Files/Pods-JHImageContainer/Pods-JHImageContainer.release.xcconfig"; sourceTree = "<group>"; };
+		498C3852C4743142FB09B287 /* Pods-JHImageContainer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHImageContainer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JHImageContainer/Pods-JHImageContainer.debug.xcconfig"; sourceTree = "<group>"; };
+		8037C466C6B5D7CC2FBCB607 /* libPods-JHImageContainer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JHImageContainer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17EA041021D65536B5819D3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17EA0E0372CE4A6091915315 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17EA0ECCF60E851D9DD7CB79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58FA90465B9638967E75420A /* libPods-JHImageContainer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17EA075AA1723D488AB65787 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				17EA039D35B7D69B2E5BA4F5 /* Info.plist */,
+				17EA047BBD2C98DCDACC8C7E /* Assets.xcassets */,
+				17EA01DB5AA0018CA27EB6E5 /* LaunchScreen.storyboard */,
+				17EA0C178B9E66322BE691F2 /* Supporting Files */,
+				17EA0C55530F66D91093838E /* AppDelegate.h */,
+				17EA0E5F723C59CBC0D36887 /* AppDelegate.m */,
+				17EA0A2FA609FF47348740DA /* Main.storyboard */,
+				17EA0DDEA5888B598425C841 /* ViewController.h */,
+				17EA0E5220EFC837DC0C2411 /* ViewController.m */,
+			);
+			name = Sample;
+			path = JHImageContainer;
+			sourceTree = "<group>";
+		};
+		17EA088E0F4CFD83B56C045A /* JHImageContainerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				17EA0DFB787A7468BECA4EED /* Info.plist */,
+				17EA061D255E91B2D689C769 /* JHImageContainerUITests.m */,
+			);
+			path = JHImageContainerUITests;
+			sourceTree = "<group>";
+		};
+		17EA0B2D9FBD4C4501D4234D /* JHImageContainerTests */ = {
+			isa = PBXGroup;
+			children = (
+				17EA03F36F125317804692E4 /* Info.plist */,
+				17EA0184E2477572C9D31B0F /* JHImageContainerTests.m */,
+			);
+			path = JHImageContainerTests;
+			sourceTree = "<group>";
+		};
+		17EA0BE9A83A8813E701F313 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17EA01C3EA971F409082DF36 /* JHImageContainer.app */,
+				17EA063D29C16A634F20ADEE /* JHImageContainerTests.xctest */,
+				17EA0E32ADD490D5AEAE8801 /* JHImageContainerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17EA0C178B9E66322BE691F2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				17EA065A8DB4718D3009D735 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		17EA0E043D0BA73F85E514F0 = {
+			isa = PBXGroup;
+			children = (
+				17EA0BE9A83A8813E701F313 /* Products */,
+				2E6240371CF3697700AB9060 /* JHImageContainer */,
+				17EA075AA1723D488AB65787 /* Sample */,
+				17EA0B2D9FBD4C4501D4234D /* JHImageContainerTests */,
+				17EA088E0F4CFD83B56C045A /* JHImageContainerUITests */,
+				528E4ABF36337170F420DE00 /* Pods */,
+				38688192D2D9EB0675AB4954 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2E6240371CF3697700AB9060 /* JHImageContainer */ = {
+			isa = PBXGroup;
+			children = (
+				2E6240381CF3698E00AB9060 /* JHImageView */,
+			);
+			path = JHImageContainer;
+			sourceTree = "<group>";
+		};
+		2E6240381CF3698E00AB9060 /* JHImageView */ = {
+			isa = PBXGroup;
+			children = (
+				2E62403C1CF36A6500AB9060 /* JHImageView.h */,
+				2E62403D1CF36A6500AB9060 /* JHImageView.m */,
+			);
+			name = JHImageView;
+			sourceTree = "<group>";
+		};
+		38688192D2D9EB0675AB4954 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8037C466C6B5D7CC2FBCB607 /* libPods-JHImageContainer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		528E4ABF36337170F420DE00 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				498C3852C4743142FB09B287 /* Pods-JHImageContainer.debug.xcconfig */,
+				33E9EEC9BA7DC66D7C98402B /* Pods-JHImageContainer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17EA0218D5E1C3C809451268 /* JHImageContainerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17EA0B28BE4ECBD93EDFBC7C /* Build configuration list for PBXNativeTarget "JHImageContainerTests" */;
+			buildPhases = (
+				17EA0DE50067A82E945132A4 /* Sources */,
+				17EA0E0372CE4A6091915315 /* Frameworks */,
+				17EA07D66F032361A47CC532 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17EA05DB573A0DC49EEF3B3E /* PBXTargetDependency */,
+			);
+			name = JHImageContainerTests;
+			productName = JHImageContainerTests;
+			productReference = 17EA063D29C16A634F20ADEE /* JHImageContainerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		17EA04260FEB4A0F75967E38 /* JHImageContainerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17EA0E6CDD4B36AB771FD57C /* Build configuration list for PBXNativeTarget "JHImageContainerUITests" */;
+			buildPhases = (
+				17EA0AB9C22FA2E3D2C2AAEB /* Sources */,
+				17EA041021D65536B5819D3C /* Frameworks */,
+				17EA014CA92BA80B5D80C4A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17EA00C55E08F89995AD730B /* PBXTargetDependency */,
+			);
+			name = JHImageContainerUITests;
+			productName = JHImageContainerUITests;
+			productReference = 17EA0E32ADD490D5AEAE8801 /* JHImageContainerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		17EA0F0C4450CD00E2C1C8E8 /* JHImageContainer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17EA057351B6B25BB7827872 /* Build configuration list for PBXNativeTarget "JHImageContainer" */;
+			buildPhases = (
+				65BAA0D50847F70DAC59DAF8 /* Check Pods Manifest.lock */,
+				17EA08323CA2F99E3D84782F /* Sources */,
+				17EA0ECCF60E851D9DD7CB79 /* Frameworks */,
+				17EA020806B927EBAD8B2027 /* Resources */,
+				2729C273A0F4514050A52FD8 /* Embed Pods Frameworks */,
+				F47E5979878A9107639C4E8E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JHImageContainer;
+			productName = JHImageContainer;
+			productReference = 17EA01C3EA971F409082DF36 /* JHImageContainer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17EA01CAE7961884F44CF914 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Jiahong Xu";
+			};
+			buildConfigurationList = 17EA013BEF31E86BFDCAA329 /* Build configuration list for PBXProject "JHImageContainer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 17EA0E043D0BA73F85E514F0;
+			productRefGroup = 17EA0BE9A83A8813E701F313 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17EA0F0C4450CD00E2C1C8E8 /* JHImageContainer */,
+				17EA0218D5E1C3C809451268 /* JHImageContainerTests */,
+				17EA04260FEB4A0F75967E38 /* JHImageContainerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17EA014CA92BA80B5D80C4A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17EA05CCE7CD96484046D5AB /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17EA020806B927EBAD8B2027 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17EA0A9A0D9AE15014B7F04C /* Info.plist in Resources */,
+				17EA084F3DB67192329F2A0A /* Assets.xcassets in Resources */,
+				17EA04039F2775C9157D25AB /* LaunchScreen.storyboard in Resources */,
+				17EA0F8BF748AB88731CE3CB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17EA07D66F032361A47CC532 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17EA0945C16ADDF8AFC87C25 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2729C273A0F4514050A52FD8 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JHImageContainer/Pods-JHImageContainer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65BAA0D50847F70DAC59DAF8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F47E5979878A9107639C4E8E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JHImageContainer/Pods-JHImageContainer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17EA08323CA2F99E3D84782F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E62403E1CF36A6500AB9060 /* JHImageView.m in Sources */,
+				17EA01EA460B838AC07B2039 /* main.m in Sources */,
+				17EA0507F985F355F2DF6E03 /* AppDelegate.m in Sources */,
+				17EA0F002D1C3C30AFDCF7FD /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17EA0AB9C22FA2E3D2C2AAEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17EA057B93C92E3FD68BA974 /* JHImageContainerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17EA0DE50067A82E945132A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17EA04EE87DF1EB95819A515 /* JHImageContainerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17EA00C55E08F89995AD730B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17EA0F0C4450CD00E2C1C8E8 /* JHImageContainer */;
+			targetProxy = 17EA00C2D261BA742ABA6EE6 /* PBXContainerItemProxy */;
+		};
+		17EA05DB573A0DC49EEF3B3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17EA0F0C4450CD00E2C1C8E8 /* JHImageContainer */;
+			targetProxy = 17EA0D60BCE231369AF19957 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		17EA01DB5AA0018CA27EB6E5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17EA0CAD4353B0A4065B3CDF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		17EA0A2FA609FF47348740DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17EA0C91D704B3B0DAAA15DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17EA003C9F9431C6B7693B73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33E9EEC9BA7DC66D7C98402B /* Pods-JHImageContainer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JHImageContainer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jhong.JHImageContainer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		17EA05D1573445D8D0ED5080 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 498C3852C4743142FB09B287 /* Pods-JHImageContainer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JHImageContainer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jhong.JHImageContainer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		17EA0957AD0B16E1F4E01799 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JHImageContainer.app/JHImageContainer";
+				INFOPLIST_FILE = JHImageContainerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jhong.JHImageContainerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		17EA09C9D1380252CDD25B23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JHImageContainer.app/JHImageContainer";
+				INFOPLIST_FILE = JHImageContainerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jhong.JHImageContainerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+		17EA0A407593F3640F94B981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		17EA0C825B2CD412D7D19AFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JHImageContainer.app/JHImageContainer";
+				INFOPLIST_FILE = JHImageContainerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jhong.JHImageContainerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		17EA0CA06EDEF2A11D4F8E6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		17EA0D805E57DE6B630D9B49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JHImageContainer.app/JHImageContainer";
+				INFOPLIST_FILE = JHImageContainerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jhong.JHImageContainerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17EA013BEF31E86BFDCAA329 /* Build configuration list for PBXProject "JHImageContainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17EA0CA06EDEF2A11D4F8E6D /* Debug */,
+				17EA0A407593F3640F94B981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17EA057351B6B25BB7827872 /* Build configuration list for PBXNativeTarget "JHImageContainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17EA05D1573445D8D0ED5080 /* Debug */,
+				17EA003C9F9431C6B7693B73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17EA0B28BE4ECBD93EDFBC7C /* Build configuration list for PBXNativeTarget "JHImageContainerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17EA0C825B2CD412D7D19AFE /* Debug */,
+				17EA0D805E57DE6B630D9B49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17EA0E6CDD4B36AB771FD57C /* Build configuration list for PBXNativeTarget "JHImageContainerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17EA0957AD0B16E1F4E01799 /* Debug */,
+				17EA09C9D1380252CDD25B23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 17EA01CAE7961884F44CF914 /* Project object */;
+}
