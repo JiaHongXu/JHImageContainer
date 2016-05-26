@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ImageCollectionViewCell : UICollectionViewCell
+@interface ImageCollectionViewCell : UICollectionViewCell<UIScrollViewDelegate, UIGestureRecognizerDelegate, UIActionSheetDelegate>
+@property (nonatomic) float maxZoomScale;
+@property (nonatomic) float minZoomScale;
+@property (nonatomic) float animateDuration;
 
 -(void) setupWithThumbImg:(NSString *) thumbImg andOriginImg:(NSString *) originImg;
 @end

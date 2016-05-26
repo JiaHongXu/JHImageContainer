@@ -182,6 +182,24 @@
 			);
 			sourceTree = "<group>";
 		};
+		2E306D2A1CF6B35700110AE7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2E306D261CF6A0C600110AE7 /* default_empty_photo_broken.png */,
+				2E306D271CF6A0C600110AE7 /* default_empty_photo.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		2E306D2B1CF6B37A00110AE7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2E306D231CF69D7000110AE7 /* ImageCollectionViewCell.h */,
+				2E306D241CF69D7000110AE7 /* ImageCollectionViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		2E6240371CF3697700AB9060 /* JHImageContainer */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,12 +211,10 @@
 		2E6240381CF3698E00AB9060 /* JHImageView */ = {
 			isa = PBXGroup;
 			children = (
-				2E306D261CF6A0C600110AE7 /* default_empty_photo_broken.png */,
-				2E306D271CF6A0C600110AE7 /* default_empty_photo.png */,
+				2E306D2B1CF6B37A00110AE7 /* Cells */,
+				2E306D2A1CF6B35700110AE7 /* Images */,
 				2E62403C1CF36A6500AB9060 /* JHImageView.h */,
 				2E62403D1CF36A6500AB9060 /* JHImageView.m */,
-				2E306D231CF69D7000110AE7 /* ImageCollectionViewCell.h */,
-				2E306D241CF69D7000110AE7 /* ImageCollectionViewCell.m */,
 			);
 			name = JHImageView;
 			sourceTree = "<group>";
