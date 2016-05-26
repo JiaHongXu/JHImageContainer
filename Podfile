@@ -7,7 +7,7 @@ target 'JHImageContainer' do
 pod 'Masonry'
 pod 'SDWebImage', '~> 3.7.5'
 pod 'MBProgressHUD', '~> 0.9.2'
-pod 'SDAutoLayout', '~> 1.51'
+pod 'Masonry'
 end
 
 target 'JHImageContainerTests' do

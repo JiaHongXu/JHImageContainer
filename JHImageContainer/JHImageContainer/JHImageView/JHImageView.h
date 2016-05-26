@@ -45,4 +45,14 @@
  * 返回参数：无
  */
 -(void)setupWithThumbImageURL:(NSString *)thumbImgURL andOriginImage:(NSString *)originImageURL;
+
+
+/*
+ * 加载网络图片（图片url）
+ *
+ * 要求参数：缩略图图片url，原图图片url
+ *
+ * 返回参数：无
+ */
+-(void)setupWithThumbImgs:(NSMutableArray *)thumbImgs andOriginImgs:(NSMutableArray *)originImgs;
 @end

@@ -19,7 +19,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SDAutoLayout.xcscheme</key>
+		<key>Pods-JHImageContainerTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-JHImageContainerUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,7 +37,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>25067351C4BCB47E02CBE9A30FC36596</key>
+		<key>17747526EDF2F8395098FAB7D369A4AE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -42,12 +47,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5BA90266BA7F9BE5230776E429714618</key>
+		<key>5E4450CA5B4BB7946A74C00E4ACD4E5D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8F9C41F8A7BC29039409DF794324AC6E</key>
+		<key>696E7726F4B0DEE145101F713EFD1703</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D1B34CE8422CE0707B987A010DCC41E2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

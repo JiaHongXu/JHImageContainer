@@ -8,27 +8,44 @@
 
 #import "JHImageView.h"
 
-#import <SDWebImage/UIImageView+WebCache.h>
-#import <MBProgressHUD/MBProgressHUD.h>
-#import <SDAutoLayout/UIView+SDAutoLayout.h>
+#import <Masonry/Masonry.h>
+
+
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
 @interface JHImageView()
+@property (nonatomic) NSInteger height;
+@property (nonatomic) NSInteger width;
 
-@property (nonatomic) UIImageView *thumbImageView;
-@property (nonatomic) UIImageView *originImageView;
-@property (nonatomic) UIScrollView *containerScrollView;
+@property (nonatomic) CGFloat cell_width;
 
-@property (nonatomic) CGRect previousFrame;
-@property (nonatomic) CGFloat currentScale;
+@property (nonatomic) NSMutableArray *thumbImageArray;
+@property (nonatomic) NSMutableArray *originImageArray;
 
-@property (nonatomic) CGFloat touchX;
-@property (nonatomic) CGFloat touchY;
-
-@property (nonatomic) MBProgressHUD *waitingHud;
-@property (nonatomic) UIView *waitingView;
 @end
 
 @implementation JHImageView
 
+- (void)setup{
+    
+}
 
+- (void)setupWithThumbImageURL:(NSString *)thumbImgURL andOriginImage:(NSString *)originImageURL{
+    
+}
+
+- (void)setupWithThumbImgs:(NSMutableArray *)thumbImgs andOriginImgs:(NSMutableArray *)originImgs{
+    _thumbImageArray = thumbImgs;
+    _originImageArray = originImgs;
+    
+    [self setup];
+}
+
+- (void)initUI{
+    
+}
+
+- (void)initData{
+    
+}
 @end
