@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JHImageView : UIView
+@interface JHImageView : UIView<UICollectionViewDelegate, UICollectionViewDataSource>
 
 /*
  * 加载本地图片（图片名称）

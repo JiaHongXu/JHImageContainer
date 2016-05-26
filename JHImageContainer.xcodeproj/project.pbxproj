@@ -211,8 +211,8 @@
 		2E6240381CF3698E00AB9060 /* JHImageView */ = {
 			isa = PBXGroup;
 			children = (
-				2E306D2B1CF6B37A00110AE7 /* Cells */,
 				2E306D2A1CF6B35700110AE7 /* Images */,
+				2E306D2B1CF6B37A00110AE7 /* Cells */,
 				2E62403C1CF36A6500AB9060 /* JHImageView.h */,
 				2E62403D1CF36A6500AB9060 /* JHImageView.m */,
 			);
