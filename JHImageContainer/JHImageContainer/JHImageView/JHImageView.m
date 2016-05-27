@@ -11,9 +11,10 @@
 #import <Masonry/Masonry.h>
 
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
-#define CGFloat MAX_WIDTH_HEIGHT = 120.0;
 
 @interface JHImageView()
+@property (nonatomic) UICollectionView *collectionView;
+
 @property (nonatomic) NSInteger height;
 @property (nonatomic) NSInteger width;
 
@@ -24,6 +25,14 @@
 @end
 
 @implementation JHImageView
+
+-(id)init{
+    self = [super init];
+    _max_width = 240;
+    _max_height = 240;
+    
+    return self;
+}
 
 - (void)setup{
     [self initUI];
@@ -52,17 +61,28 @@
     
     //设置每个item的大小
     flowLayout.itemSize = [self getItemSize];
+    flowLayout.sectionInset = UIEdgeInsetsMake(0, 0, 5, 5);
     
-    //创建collectionView 通过一个布局策略layout来创建
-    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 20, 300, 300) collectionViewLayout:flowLayout];
-    collectionView.collectionViewLayout = flowLayout;
+//    创建collectionView 通过一个布局策略layout来创建
+    _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 20, 300, 300) collectionViewLayout:flowLayout];
+    _collectionView.collectionViewLayout = flowLayout;
 
     //代理设置
-    collectionView.delegate=self;
-    collectionView.dataSource=self;
+    _collectionView.delegate=self;
+    _collectionView.dataSource=self;
     
     //注册item类型 这里使用系统的类型
-    [collectionView registerClass:[ImageCollectionViewCell class] forCellWithReuseIdentifier:@"cellid"];
+    [_collectionView registerClass:[ImageCollectionViewCell class] forCellWithReuseIdentifier:@"cellid"];
+    
+    _collectionView.backgroundColor = [UIColor clearColor];
+    [self addSubview:_collectionView];
+    
+    //    设置布局约束
+    [_collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(ws);
+    }];
+    
+    CGRect rect = _collectionView.frame;
 }
 
 - (void)initData{
@@ -73,11 +93,11 @@
     CGSize size;
     switch (_cell_count) {
         case 1:
-            size = CGSizeMake(120, 120);
+            size = CGSizeMake(_max_height, _max_width);
 //            size = CGSizeMake(_MAX_WIDTH_HEIGHT, _MAX_WIDTH_HEIGHT);
             break;
         default:
-            size = CGSizeMake(120/3 - 5, 120/3 -5);
+            size = CGSizeMake(_max_height/3 - 5, _max_width/3 -5);
 //            size = CGSizeMake(_MAX_WIDTH_HEIGHT/3 - 5, _MAX_WIDTH_HEIGHT/3 -5);
             break;
     }
@@ -86,7 +106,7 @@
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     ImageCollectionViewCell * cell  = [collectionView dequeueReusableCellWithReuseIdentifier:@"cellid" forIndexPath:indexPath];
-    
+
     [cell setupWithThumbImg:[_thumbImageArray objectAtIndex:indexPath.row] andOriginImg:[_originImageArray objectAtIndex:indexPath.row]];
     
     return cell;

@@ -9,6 +9,9 @@
 #import "ImageCollectionViewCell.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <MBProgressHUD/MBProgressHUD.h>
+#import <Masonry/Masonry.h>
+
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
 @interface ImageCollectionViewCell()
 @property (nonatomic) NSString *thumbImg;
@@ -38,11 +41,6 @@
     if (self==nil) {
         self = [super init];
     }
-    _originImageView = [[UIImageView alloc] init];
-    _thumbImageView = [[UIImageView alloc] initWithFrame:self.frame];
-    _maxZoomScale = 3.0;
-    _minZoomScale = 0.8;
-    _animateDuration = 0.3;
     
     return self;
 }
@@ -55,16 +53,25 @@
 }
 
 -(void) setup{
+//    初始化变量
     _isShowingOriginImg = NO;
+    _originImageView = [[UIImageView alloc] init];
+    _thumbImageView = [[UIImageView alloc] initWithFrame:self.frame];
+    _maxZoomScale = 3.0;
+    _minZoomScale = 0.8;
+    _animateDuration = 0.3;
     
-    [_thumbImageView sd_setImageWithURL:[[NSURL alloc] initWithString:_thumbImg] placeholderImage:[UIImage imageNamed:@"default_empty_photo"]];
-    
+    [self addSubview:_thumbImageView];
+
     _thumbImageView.layer.masksToBounds = YES;
     _thumbImageView.contentMode = UIViewContentModeScaleAspectFill;
     
     _originImageView.contentMode = UIViewContentModeScaleAspectFill;
     
     [self registerGesture];
+    
+    [_thumbImageView sd_setImageWithURL:[[NSURL alloc] initWithString:_thumbImg] placeholderImage:[UIImage imageNamed:@"default_empty_photo"]];
+    
 }
 
 -(void)SingleTap:(UITapGestureRecognizer*)recognizer

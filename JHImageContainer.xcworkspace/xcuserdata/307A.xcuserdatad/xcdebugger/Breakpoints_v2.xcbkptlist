@@ -9,29 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JHImageContainer/JHImageContainer/JHImageView/JHImageView.m"
-            timestampString = "485959348.333846"
+            filePath = "JHImageContainer/JHImageContainer/JHImageView/ImageCollectionViewCell.m"
+            timestampString = "486043784.684824"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
-            landmarkName = "-collectionView:cellForItemAtIndexPath:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "JHImageContainer/JHImageContainer/JHImageView/JHImageView.m"
-            timestampString = "485959402.084124"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
-            landmarkName = "-collectionView:numberOfItemsInSection:"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "-SingleTap:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

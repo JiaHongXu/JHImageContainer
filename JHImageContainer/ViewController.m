@@ -36,7 +36,7 @@
    
     [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(ws.view);
-        make.size.mas_equalTo(CGSizeMake(300, 300));
+        make.size.mas_equalTo(CGSizeMake(240, 240));
     }];
     
     

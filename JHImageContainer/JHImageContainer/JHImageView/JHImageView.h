@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JHImageView : UIView<UICollectionViewDelegate, UICollectionViewDataSource>
+@interface JHImageView : UIView<UICollectionViewDataSource,UICollectionViewDelegate>
+
+@property (nonatomic) float max_width;
+@property (nonatomic) float max_height;
 
 /*
  * 加载本地图片（图片名称）
