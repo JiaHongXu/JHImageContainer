@@ -28,8 +28,8 @@
 
 -(id)init{
     self = [super init];
-    _max_width = 240;
-    _max_height = 240;
+    _max_width = 270;
+    _max_height = 270;
     
     return self;
 }
