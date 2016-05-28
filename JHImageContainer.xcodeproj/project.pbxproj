@@ -22,6 +22,7 @@
 		2E306D281CF6A0C600110AE7 /* default_empty_photo_broken.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E306D261CF6A0C600110AE7 /* default_empty_photo_broken.png */; };
 		2E306D291CF6A0C600110AE7 /* default_empty_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E306D271CF6A0C600110AE7 /* default_empty_photo.png */; };
 		2E62403E1CF36A6500AB9060 /* JHImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E62403D1CF36A6500AB9060 /* JHImageView.m */; };
+		2E95FE631CFA0CD8004A04AC /* ImageBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E95FE621CFA0CD8004A04AC /* ImageBean.m */; };
 		3979F12176E97F182DCF93DB /* libPods-JHImageContainer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C5170D2E2AF0D0F241FF0D4C /* libPods-JHImageContainer.a */; };
 		848A196F279EC52BD2B538FE /* libPods-JHImageContainerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C36564AA62C812F80E7F3637 /* libPods-JHImageContainerTests.a */; };
 		F141E7E0BC360C7F4FAE4F4E /* libPods-JHImageContainerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E07A292358ACA9D06D013B8E /* libPods-JHImageContainerUITests.a */; };
@@ -68,6 +69,8 @@
 		2E306D271CF6A0C600110AE7 /* default_empty_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = default_empty_photo.png; path = JHImageContainer/JHImageView/img/default_empty_photo.png; sourceTree = "<group>"; };
 		2E62403C1CF36A6500AB9060 /* JHImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JHImageView.h; path = JHImageContainer/JHImageView/JHImageView.h; sourceTree = "<group>"; };
 		2E62403D1CF36A6500AB9060 /* JHImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JHImageView.m; path = JHImageContainer/JHImageView/JHImageView.m; sourceTree = "<group>"; };
+		2E95FE611CFA0CD8004A04AC /* ImageBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageBean.h; path = JHImageContainer/JHImageView/Bean/ImageBean.h; sourceTree = "<group>"; };
+		2E95FE621CFA0CD8004A04AC /* ImageBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageBean.m; path = JHImageContainer/JHImageView/Bean/ImageBean.m; sourceTree = "<group>"; };
 		32309E565E5BF6CD51C5B6C0 /* Pods-JHImageContainerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHImageContainerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JHImageContainerTests/Pods-JHImageContainerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3F5545D8ECEF677F5E8C15FE /* Pods-JHImageContainer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHImageContainer.release.xcconfig"; path = "Pods/Target Support Files/Pods-JHImageContainer/Pods-JHImageContainer.release.xcconfig"; sourceTree = "<group>"; };
 		A0239CEFCAB052411778A873 /* Pods-JHImageContainerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHImageContainerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JHImageContainerTests/Pods-JHImageContainerTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -211,12 +214,22 @@
 		2E6240381CF3698E00AB9060 /* JHImageView */ = {
 			isa = PBXGroup;
 			children = (
+				2E95FE5D1CFA0B70004A04AC /* Bean */,
 				2E306D2A1CF6B35700110AE7 /* Images */,
 				2E306D2B1CF6B37A00110AE7 /* Cells */,
 				2E62403C1CF36A6500AB9060 /* JHImageView.h */,
 				2E62403D1CF36A6500AB9060 /* JHImageView.m */,
 			);
 			name = JHImageView;
+			sourceTree = "<group>";
+		};
+		2E95FE5D1CFA0B70004A04AC /* Bean */ = {
+			isa = PBXGroup;
+			children = (
+				2E95FE611CFA0CD8004A04AC /* ImageBean.h */,
+				2E95FE621CFA0CD8004A04AC /* ImageBean.m */,
+			);
+			name = Bean;
 			sourceTree = "<group>";
 		};
 		AF7A0F16351B467A4FF2422A /* Pods */ = {
@@ -484,6 +497,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E62403E1CF36A6500AB9060 /* JHImageView.m in Sources */,
+				2E95FE631CFA0CD8004A04AC /* ImageBean.m in Sources */,
 				17EA01EA460B838AC07B2039 /* main.m in Sources */,
 				2E306D251CF69D7000110AE7 /* ImageCollectionViewCell.m in Sources */,
 				17EA0507F985F355F2DF6E03 /* AppDelegate.m in Sources */,

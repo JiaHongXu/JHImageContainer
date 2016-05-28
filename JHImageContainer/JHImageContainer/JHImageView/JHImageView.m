@@ -9,6 +9,7 @@
 #import "JHImageView.h"
 #import "ImageCollectionViewCell.h"
 #import <Masonry/Masonry.h>
+#import "ImageBean.h"
 
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
@@ -124,10 +125,9 @@
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    ImageCollectionViewCell *cell  = [collectionView dequeueReusableCellWithReuseIdentifier:@"cellid" forIndexPath:indexPath];
+    ImageCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cellis" forIndexPath:indexPath];
 
-    [cell setupWithThumbImg:[_thumbImageArray objectAtIndex:indexPath.row] andOriginImg:[_originImageArray objectAtIndex:indexPath.row]];
-    cell.backgroundColor = [UIColor redColor];
+    cell.bean = [[ImageBean alloc] initWithThumbImg:[_thumbImageArray objectAtIndex:indexPath.row] andOriginImg:[_originImageArray objectAtIndex:indexPath.row]];
     return cell;
 }
 

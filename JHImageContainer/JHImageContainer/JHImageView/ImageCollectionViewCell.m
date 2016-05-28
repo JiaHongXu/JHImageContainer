@@ -14,8 +14,6 @@
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
 @interface ImageCollectionViewCell()
-@property (nonatomic) NSString *thumbImg;
-@property (nonatomic) NSString *originImg;
 
 @property (nonatomic) UIImageView *thumbImageView;
 @property (nonatomic) UIImageView *originImageView;
@@ -36,20 +34,6 @@
 @end
 
 @implementation ImageCollectionViewCell
--(id)init{
-    if (self==nil) {
-        self = [super init];
-    }
-    
-    return self;
-}
-
--(void)setupWithThumbImg:(NSString *)thumbImg andOriginImg:(NSString *)originImg{
-    _thumbImg = thumbImg;
-    _originImg = thumbImg;
-
-    [self setup];
-}
 
 -(void) setup{
 //    初始化变量
@@ -68,7 +52,7 @@
     
     [self registerGesture];
     
-    [_thumbImageView sd_setImageWithURL:[[NSURL alloc] initWithString:_thumbImg] placeholderImage:[UIImage imageNamed:@"default_empty_photo"]];
+    [_thumbImageView sd_setImageWithURL:[[NSURL alloc] initWithString:_bean.thumbImage] placeholderImage:[UIImage imageNamed:@"default_empty_photo"]];
     
 }
 
@@ -123,7 +107,7 @@
     _originImageView.tag=1;
     
     _originImageView.frame = _originalFrame;
-    [_originImageView sd_setImageWithURL:[[NSURL alloc] initWithString:_originImg] placeholderImage:_thumbImageView.image  completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+    [_originImageView sd_setImageWithURL:[[NSURL alloc] initWithString:_bean.originImage] placeholderImage:_thumbImageView.image  completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
         [self stopWaitingIndicator];
         if (error) {
             [self showAlertMsg:@"加载失败"];

@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ImageBean.h"
 
 @interface ImageCollectionViewCell : UICollectionViewCell<UIScrollViewDelegate, UIGestureRecognizerDelegate, UIActionSheetDelegate>
 @property (nonatomic) float maxZoomScale;
 @property (nonatomic) float minZoomScale;
 @property (nonatomic) float animateDuration;
 
--(void) setupWithThumbImg:(NSString *) thumbImg andOriginImg:(NSString *) originImg;
+@property (nonatomic) ImageBean *bean;
+-(void)setup;
 @end
