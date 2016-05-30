@@ -30,15 +30,15 @@
     }
     
     WS(ws);
-    JHImageView *imageView = [[JHImageView alloc] initWithThumbImgs:_imageURLs andOriginImgs:_imageURLs];
-//    JHImageView *imageView = [[JHImageView alloc] initWithFrame:CGRectMake(0, 64, 300, 300)];
+//    JHImageView *imageView = [[JHImageView alloc] initWithThumbImgs:_imageURLs andOriginImgs:_imageURLs];
+    JHImageView *imageView = [[JHImageView alloc] initWithFrame:CGRectMake(0, 64, 300, 300)];
     
     [self.view addSubview:imageView];
    
     imageView.backgroundColor = [UIColor blueColor];
     
 //    
-//    [imageView setupWithThumbImgs:_imageURLs andOriginImgs:_imageURLs];
+    [imageView setupWithThumbImgs:_imageURLs andOriginImgs:_imageURLs];
 }
 
 - (void)didReceiveMemoryWarning {
