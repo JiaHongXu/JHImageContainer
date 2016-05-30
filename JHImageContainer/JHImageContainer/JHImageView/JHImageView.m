@@ -8,8 +8,8 @@
 
 #import "JHImageView.h"
 #import "ImageCollectionViewCell.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 #import <Masonry/Masonry.h>
-#import "ImageBean.h"
 
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
@@ -127,11 +127,10 @@
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     ImageCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cellid" forIndexPath:indexPath];
 
-    cell.bean = [[ImageBean alloc] initWithThumbImg:[_thumbImageArray objectAtIndex:indexPath.row] andOriginImg:[_originImageArray objectAtIndex:indexPath.row]];
+//    [cell.imageView sd_setImageWithURL:[[NSURL alloc] initWithString:[_thumbImageArray objectAtIndex:indexPath.row]] placeholderImage:[UIImage imageNamed:@"default_empty_photo"]];
     
+    cell.imageView.image = [UIImage imageNamed:@"default_empty_photo"];
     cell.backgroundColor = [UIColor blueColor];
-    
-    [cell setup];
     return cell;
 }
 

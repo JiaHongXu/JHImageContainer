@@ -7,13 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ImageBean.h"
 
-@interface ImageCollectionViewCell : UICollectionViewCell<UIScrollViewDelegate, UIGestureRecognizerDelegate, UIActionSheetDelegate>
-@property (nonatomic) float maxZoomScale;
-@property (nonatomic) float minZoomScale;
-@property (nonatomic) float animateDuration;
+@interface ImageCollectionViewCell : UICollectionViewCell
 
-@property (nonatomic) ImageBean *bean;
--(void)setup;
+@property (nonatomic) UIImageView *imageView;
+
 @end
